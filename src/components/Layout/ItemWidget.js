@@ -1,5 +1,4 @@
 import styles from './ItemWidget.module.scss';
-import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
 
 function ItemWidget(props) {
   let content;
