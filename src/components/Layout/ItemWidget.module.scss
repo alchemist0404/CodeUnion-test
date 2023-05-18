@@ -1,0 +1,83 @@
+.item{
+     width: 100%;
+     display: flex;
+     justify-content: space-between;
+     .inform{
+          padding: 18px 30px;
+          padding-right: 0px;
+          display: flex;
+          .avatar{
+               width: 64px;
+               height: 64px;
+               margin-right: 10px;
+               border-color: transparent;
+               border-radius: 35px;
+          }
+          .description{
+               display: flex;
+               flex-direction: column;
+               justify-content: space-between;
+               .data{
+                    display: flex;
+                    flex: none;
+                    .email{
+                         font-family: 'Futura PT';
+                         font-style: normal;
+                         font-weight: 400;
+                         font-size: 18px;
+                         line-height: 20px;
+                         padding-bottom: 5px;
+                         /* identical to box height, or 111% */
+                         color: #9494A0;
+                    }
+                    .name{
+                         font-family: 'Futura PT';
+                         font-style: normal;
+                         font-weight: 800;
+                         font-size: 18px;
+                         line-height: 20px;
+                         /* identical to box height, or 111% */
+                         color: #424F5E;
+                         margin-right: 10px;
+                    }
+               }
+               .tags{
+                    display: flex;
+                    flex-wrap: wrap;
+                    .tag{
+                         cursor: pointer;
+                         border: 1px solid #C1C1CB;
+                         border-radius: 10px;
+                         padding: 5px 10px;
+                         margin-right: 5px;
+                         margin-bottom: 5px;
+                         color: #9494A0;
+
+                         &:hover{
+                              color: #5A57FF;
+                         }
+                    }
+               }
+          }
+     }
+     .more{
+          padding-top:13px;
+          color: #C1C1CB;
+     }
+     &:hover{
+          background-color: #EFEFF6;
+     }
+}
+
+@media only screen and (max-width: 810px) {
+     .name{ font-size: 14px !important; }
+     .email{ font-size: 14px !important; }
+     .avatar{ width: 55px !important; height: 55px !important;}
+     .tag{border-radius: 5px !important; font-size: 12px;}
+     .inform{ padding-top:5px !important; padding-bottom: 5px !important; padding-left: 15px !important;}
+}
+
+@media only screen and (max-width: 672px) {
+     .data{ flex-direction: column !important;   }
+     .name{margin-right: 0px !important;}
+}
